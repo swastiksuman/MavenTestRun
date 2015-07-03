@@ -19,7 +19,7 @@ public class AppTest{
 		System.out.println("WebOpened");
 		driver.findElement(By.linkText("Login")).click();
 		driver.findElement(By.cssSelector(".fk-input.login-form-input.user-email")).sendKeys("swastiksuman@gmail.com");
-		driver.findElement(By.cssSelector(".fk-input.login-form-input.user-pwd")).sendKeys("elnino");		
+		driver.findElement(By.cssSelector(".fk-input.login-form-input.user-pwd")).sendKeys("somepassword");		
 		driver.findElement(By.cssSelector(".submit-btn.login-btn.btn")).click();
 		
 	}
