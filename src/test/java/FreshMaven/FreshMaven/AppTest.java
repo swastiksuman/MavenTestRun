@@ -12,9 +12,13 @@ public class AppTest{
 	
 	public WebDriver driver;
 	@Test
-	public void someTest(){
+	public void someTest() throws InterruptedException{
 		driver = new FirefoxDriver();
 		driver.get("http://www.flipkart.com");
+		System.out.println("WebOpened");
+		Thread.sleep(5000);
+		driver.close();
+		driver.quit();
 	}
 	
 }
